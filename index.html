@@ -1,59 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moja Strona</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cezar Market</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
 
-    nav {
-      background: #222;
-      padding: 15px;
-      text-align: center;
-    }
+header{
+    background:#c40000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 18px;
-      transition: 0.3s;
-    }
+nav{
+    background:#222;
+    padding:10px;
+    text-align:center;
+}
 
-    nav a:hover {
-      color: orange;
-    }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
 
-    .content {
-      padding: 40px;
-      text-align: center;
-    }
+nav a:hover{
+    color:yellow;
+}
 
-    h1 {
-      color: #333;
-    }
-  </style>
+section{
+    padding:30px;
+}
+
+h2{
+    color:#c40000;
+}
+
+.produkty{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.karta{
+    background:white;
+    width:250px;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.karta img{
+    width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="#">Oferta</a>
-    <a href="#">Nowości</a>
-    <a href="#">Promocje</a>
-    <a href="#">Kontakt</a>
-  </nav>
+<header>
+    <h1>Cezar Market</h1>
+    <p>Polskie produkty spożywcze</p>
+</header>
 
-  <div class="content">
-    <h1>Witaj na stronie!</h1>
-    <p>Tu możesz dodać swoją treść.</p>
-  </div>
+<nav>
+    <a href="#produkty">Produkty</a>
+    <a href="#promocje">Promocje</a>
+    <a href="#nowosci">Nowości</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="produkty">
+    <h2>Produkty</h2>
+
+    <div class="produkty">
+
+        <div class="karta">
+            <img src="https://images.unsplash.com/photo-1584473457493-17c4b1f4f4a6?w=500" alt="Sól">
+            <h3>Sól spożywcza Małopolska</h3>
+            <p>Waga: 1 kg</p>
+            <p>Naturalna sól kuchenna do codziennego użytku.</p>
+        </div>
+
+        <div class="karta">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500" alt="Mąka">
+            <h3>Mąka pszenna</h3>
+            <p>Waga: 1 kg</p>
+            <p>Idealna do pieczenia chleba i ciast.</p>
+        </div>
+
+        <div class="karta">
+            <img src="https://images.unsplash.com/photo-1576186726115-4d51596775d1?w=500" alt="Cukier">
+            <h3>Cukier biały</h3>
+            <p>Waga: 1 kg</p>
+            <p>Klasyczny cukier do napojów i wypieków.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="promocje">
+    <h2>Promocje</h2>
+    <p>🔥 Kup 2 produkty i odbierz 10% rabatu!</p>
+</section>
+
+<section id="nowosci">
+    <h2>Nowości</h2>
+    <p>Nowa dostawa polskich słodyczy i napojów już dostępna.</p>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>📍 Cezar Market</p>
+    <p>📞 Telefon: +31 123 456 789</p>
+    <p>📧 Email: kontakt@cezarmarket.pl</p>
+</section>
+
+<footer>
+    © 2026 Cezar Market
+</footer>
 
 </body>
 </html>
